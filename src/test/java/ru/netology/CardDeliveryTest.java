@@ -31,6 +31,7 @@ public class CardDeliveryTest {
         $(".button.button").click();
         $(".notification__content")
 
+                
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
                 .shouldBe(Condition.exactText("Встреча успешно забронирована на " + actualDate));
 
